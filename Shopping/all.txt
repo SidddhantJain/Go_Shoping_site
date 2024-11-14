@@ -1,0 +1,1383 @@
+Index.html 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Shopping Cart | The Dev Drawer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <div class="container-fluid">
+        <div class="hero">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                <h1 class="display-4 fw-bold">Welcome to Dev Drawer's Sample Store.</h1>
+                <p class="col-lg-10 fs-4">Learn how to pull external products from an API int your eCommerce website using only JS. Every product contained in this website is pulled form an API.</p>
+                </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                <form class="p-4 p-md-5 border rounded-3 bg-light">
+                    <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" autocomplete="off">
+                    <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" autocomplete="off">
+                    <label for="floatingPassword">Password</label>
+                    </div>
+                    <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+                    <hr class="my-4">
+                    <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                </form>
+                </div>
+            </div>
+        </div>
+        <h2>Newest Products</h2>
+        <div class="row products new"></div>
+    </div>
+    <br>
+    <img src="https://via.placeholder.com/1280x200.png?text=Placeholder%20Image" class="img-fluid">
+    <div id="footer-placeholder"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/init.js"></script>
+</html>
+
+Login.html 
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sample Shopping Cart | The Dev Drawer</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/style.min.css" rel="stylesheet"> </head>
+</head>
+<body>
+	<div id="nav-placeholder"></div>
+	<br>
+	<br>
+    <div class="container-fluid" style="min-height:50vh;">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h1>Login To Your Account</h1>
+                        <div class="loginMsg"></div>
+                        <form method="post" class="login">
+                            <input type="text" id="username" name="username" class="form-control" value="johnd">
+                            <label for="username">User Name</label>
+                            <input type="password" id="password" name="password" class="form-control" value="m38rmF$">
+                            <label for="password">Password</label>
+                            <p><button class="btn btn-lg btn-primary">Login</button></p>
+                        </form>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+	<div id="footer-placeholder"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/init.js"></script>
+</html>
+Logout.html
+<!DOCTYPE html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sample Shopping Cart | The Dev Drawer</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/style.min.css" rel="stylesheet"> </head>
+</head>
+<body class="auth logout">
+	<div id="nav-placeholder"></div>
+	<br>
+	<br>
+    <div class="container-fluid" style="min-height:50vh;">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h1>Successfully Logged Out</h1>
+                        <p>You have been successfully logged out.</p>
+                        <p><a href="/login.html" class="btn btn-lg btn-primary">Login</a></p>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+	<div id="footer-placeholder"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/init.js"></script>
+</html>
+Product.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Shopping Cart | The Dev Drawer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <div class="container-fluid">
+        <img src="https://via.placeholder.com/1280x200.png?text=Placeholder%20Image" class="img-fluid">
+        <br>
+        <br>
+        <h1 class="product_title"></h1>
+        <div class="breadcrumb"></div>
+        <div class="row">
+            <div class="col">
+                <div class="product">
+                    <div class="image">
+                        <div class="product_image"></div>
+                    </div>
+                </div>
+            </div>    
+            <div class="col-md-9">
+                <h2 class="product_price"></h2>
+                <div class="product_description"></div>
+                <button class="btn btn-success me-2"><i class="bi bi-cart"></i> Add To Cart</button><button class="btn btn-primary"><i class="bi bi-heart"></i> Add To Wishlist</button>
+            </div>
+        </div>
+    </div>
+    <div id="footer-placeholder"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/init.js"></script>
+</html>
+wishlist.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sample Shopping Cart | The Dev Drawer</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/style.min.css" rel="stylesheet"> </head>
+
+<body>
+	<div id="nav-placeholder"></div>
+	<div class="container-fluid"> <img src="https://via.placeholder.com/1280x200.png?text=Placeholder%20Image" class="img-fluid">
+		<br>
+		<br>
+		<h1>Wishlist</h1>
+		<div class="breadcrumb"><a href="/">Home</a><span class="sep">></span>Wishlist</div>
+		<p>Lorem ipsum duis mattis id nullam erat vitae ad, gravida vel tincidunt hendrerit vestibulum dictumst quam feugiat ut platea cras ornare tristique pulvinar convallis netus.</p>
+        <div class="row products new"></div>
+	</div>
+	<div id="footer-placeholder"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/init.js"></script>
+</html>
+contact.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Shopping Cart | The Dev Drawer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <div class="container-fluid">
+        <img src="https://via.placeholder.com/1280x200.png?text=Placeholder%20Image" class="img-fluid">
+        <br>
+        <br>
+        <h1>Contact Us</h1>
+        <div class="breadcrumb"><a href="/">Home</a><span class="sep">></span>Contact Us</div>
+        <form action="#" method="post">
+            <div class="row">
+                <div class="col">
+                    <p>Himenaeos netus lectus sapien auctor mauris senectus dui aenean, auctor sollicitudin curabitur conubia morbi pharetra hac, tincidunt gravida aliquet cubilia amet mauris nullam condimentum quisque viverra cras consequat torquent mi auctor mi convallis integer elit.</p>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <strong>Telephone</strong>
+                        </div>
+                        <div class="col">
+                            555-555-5555
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <strong>Fax</strong>
+                        </div>
+                        <div class="col">
+                            555-555-5554
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Send Us A Message Online</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control">
+                                    <label for="orderid">Order Number</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" required>
+                                    <label for="fname">First Name *</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" required>
+                                    <label for="lname">Last Name *</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" required>
+                                    <label for="email">Email Address *</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <textarea class="form-control" required></textarea>
+                                    <label for="message">How Can We Help You? *</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-success">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="footer-placeholder"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/init.js"></script>
+</html>
+category.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Shopping Cart | The Dev Drawer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <div class="container-fluid">
+        <img src="https://via.placeholder.com/1280x200.png?text=Placeholder%20Image" class="img-fluid">
+        <br>
+        <br>
+        <h1 class="category-name"></h1>
+        <div class="breadcrumb"></div>
+        <div class="row products"></div>
+    </div>
+    <div id="footer-placeholder"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/init.js"></script>
+</html>
+cart.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sample Shopping Cart | The Dev Drawer</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/style.min.css" rel="stylesheet"> </head>
+
+<body class="cart">
+	<div id="nav-placeholder"></div>
+	<div class="container-fluid"> <img src="https://via.placeholder.com/1280x200.png?text=Placeholder%20Image" class="img-fluid">
+		<br>
+		<br>
+		<h1>Cart</h1>
+		<div class="breadcrumb"><a href="/">Home</a><span class="sep">></span>Cart</div>
+		<p>Lorem ipsum duis mattis id nullam erat vitae ad, gravida vel tincidunt hendrerit vestibulum dictumst quam feugiat ut platea cras ornare tristique pulvinar convallis netus.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Billing address</h4>
+                <form class="needs-validation" novalidate="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" required>
+                            <label for="firstName">First name</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" required">
+                            <label for="lastName">Last name</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control" required>
+                            <label for="address">Address</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control">
+                            <label for="address2">Address 2</label>
+                        </div>
+                        <div class="col-md-5">
+                            <select class="form-select" required>
+                                <option value="">Choose...</option>
+                                <option>United States</option>
+                            </select>
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-select" required>
+                                <option value="">Choose...</option>
+                                <option>State Name</option>
+                            </select>
+                            <label for="state">State</label>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" required>
+                            <label for="zip">Zip</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="same-address">Shipping address is the same as my billing address</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="save-info">Save this information for next time</label>
+                    </div>
+                    <hr>
+                    <h4>Payment</h4>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" checked="" required>
+                        <label for="credit">Credit card</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" required>
+                        <label for="debit">Debit card</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" required>
+                        <label for="paypal">PayPal</label>
+                    </div>
+                    <div class="row gy-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" required>
+                            <label>Name on card</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" required>
+                            <label for="cc-number">Credit card number</label>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" required>
+                            <label for="cc-expiration">Expiration</label>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" required>
+                            <label for="cc-cvv">CVV</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Continue to checkout</button>
+                </form>
+            </div>
+            <div class="col">
+                <h4 class="d-flex justify-content-between align-items-center">
+                    <span class="text-primary">Your cart</span>
+                    <span class="cartCount badge bg-primary rounded-pill"></span>
+                </h4>
+                <ul class="list-group cartDisplay">
+                    <li class="list-group-item d-flex justify-content-between"> <span>Total (USD)</span> <strong>$<span class="price"></span>0</strong> </li>
+                </ul>
+                <br>
+                <form class="card">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Promo code">
+                        <button type="submit" class="btn btn-secondary">Redeem</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+	</div>
+	<div id="footer-placeholder"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/init.js"></script>
+</html>
+account.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sample Shopping Cart | The Dev Drawer</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/style.min.css" rel="stylesheet"> </head>
+
+<body class="auth">
+	<div id="nav-placeholder"></div>
+    <div class="container-fluid userAccount"> <img src="https://via.placeholder.com/1280x200.png?text=Placeholder%20Image" class="img-fluid">
+		<br>
+		<br>
+        <div class="breadcrumb"><a href="/">Home</a><span class="sep">></span>Your Account</div>
+        <h1>Your Account</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="loginMsg"></div>
+                        <form method="post" class="updateAccount">
+                            <input type="text" id="username" name="username" class="form-control" readonly>
+                            <label for="username">User Name</label>
+                            <h3>Personal Information</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" id="fname" name="fname" class="form-control">
+                                    <label for="fname">First Name</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" id="lname" name="lname" class="form-control">
+                                    <label for="lname">Last Name</label>
+                                </div>
+                            </div>
+                            <input type="text" id="phone" name="phone" class="form-control"y>
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="email" name="email" class="form-control"y>
+                            <label for="email">Email Address</label>
+                            <h3>Address</h3>
+                            <input type="text" id="address" name="address" class="form-control">
+                            <label for="address">Street Address</label>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <input type="text" id="city" name="city" class="form-control">
+                                    <label for="city">City</label>
+                                </div>
+                                <div class="col">
+                                    <input type="text" id="zip" name="zip" class="form-control">
+                                    <label for="zip">Zip Code</label>
+                                </div>
+                            </div>
+                            <br>
+                            <p><button class="btn btn-lg btn-success">Update Account</button></p>
+                        </form>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+	<div id="footer-placeholder"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/init.js"></script>
+</html>
+about.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Shopping Cart | The Dev Drawer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <div class="container-fluid">
+        <img src="https://via.placeholder.com/1280x200.png?text=Placeholder%20Image" class="img-fluid">
+        <br>
+        <br>
+        <h1>About Us</h1>
+        <div class="breadcrumb"><a href="/">Home</a><span class="sep">></span>About Us</div>
+        <p>Lorem ipsum duis mattis id nullam erat vitae ad, gravida vel tincidunt hendrerit vestibulum dictumst quam feugiat ut platea cras ornare tristique pulvinar convallis netus.</p>
+        <p>A vulputate sollicitudin fusce auctor cras est torquent, purus morbi quisque porta aliquam lacinia etiam lobortis, posuere urna lectus cubilia platea venenatis.</p>
+        <p>Himenaeos netus lectus sapien auctor mauris senectus dui aenean, auctor sollicitudin curabitur conubia morbi pharetra hac, tincidunt gravida aliquet cubilia amet mauris nullam condimentum quisque viverra cras consequat torquent mi auctor mi convallis integer elit.</p>
+        <p>Erat praesent amet dictumst conubia dolor habitasse faucibus, etiam aenean inceptos feugiat semper ipsum integer, venenatis fusce mollis cubilia magna non.</p>
+        <p>Quam aliquam curabitur aliquet molestie orci lacinia vehicula laoreet quisque dolor faucibus phasellus, imperdiet maecenas quam nullam ut volutpat netus nostra turpis in potenti tincidunt habitant massa hac.</p>
+    </div>
+    <div id="footer-placeholder"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/init.js"></script>
+</html>
+fotter.html
+<footer class="bg-dark text-center text-white">
+    <div class="container p-4">
+        <section class="">
+        <form action="">
+            <div class="row d-flex justify-content-center">
+                <div class="col-auto">
+                <p class="pt-2">
+                    <strong>Sign up for our newsletter</strong>
+                </p>
+                </div>
+                <div class="col-md-5 col-12">
+                <div class="form-outline form-white mb-4">
+                    <input type="email" id="form5Example2" class="form-control" placeholder="Email address">
+                </div>
+                </div>
+                <div class="col-auto">
+                <button type="submit" class="btn btn-outline-light mb-4">
+                    Subscribe
+                </button>
+                </div>
+            </div>
+        </form>
+        </section>
+        <section class="">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled mb-0">
+                <li>
+                <a href="#!" class="text-white">Link 1</a>
+                </li>
+                <li>
+                <a href="#!" class="text-white">Link 2</a>
+                </li>
+                <li>
+                <a href="#!" class="text-white">Link 3</a>
+                </li>
+                <li>
+                <a href="#!" class="text-white">Link 4</a>
+                </li>
+            </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+            <ul class="list-unstyled mb-0">
+                <li>
+                <a href="#!" class="text-white">Link 1</a>
+                </li>
+                <li>
+                <a href="#!" class="text-white">Link 2</a>
+                </li>
+                <li>
+                <a href="#!" class="text-white">Link 3</a>
+                </li>
+                <li>
+                <a href="#!" class="text-white">Link 4</a>
+                </li>
+            </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled mb-0">
+                <li>
+                <a href="#!" class="text-white">Link 1</a>
+                </li>
+                <li>
+                <a href="#!" class="text-white">Link 2</a>
+                </li>
+                <li>
+                <a href="#!" class="text-white">Link 3</a>
+                </li>
+                <li>
+                <a href="#!" class="text-white">Link 4</a>
+                </li>
+            </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled mb-0">
+                <li>
+                <a href="#!" class="text-white">Link 1</a>
+                </li>
+                <li>
+                <a href="#!" class="text-white">Link 2</a>
+                </li>
+                <li>
+                <a href="#!" class="text-white">Link 3</a>
+                </li>
+                <li>
+                <a href="#!" class="text-white">Link 4</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="#">Your Store Name</a>
+    </div>
+</footer>
+navigation.html
+<header class="p-3 bg-dark text-white">
+    <div class="container-fluid">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            [logo here]
+            </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li class="nav-item active">
+                <a class="nav-link text-white" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-white" href="/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Store</a>
+                <div class="dropdown-menu categories" aria-labelledby="navbarDropdown">
+                </div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-white" href="/contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="text-end">
+                <a class="nav-link text-white" href="/cart.html"><i class="bi bi-cart"></i><span class="cartCount badge bg-primary ms-2"></span></a>
+                <a class="nav-link text-white" href="/wishlist.html"><i class="bi bi-heart"></i></a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 accountNav"></ul>
+            </div>
+        </div>
+    </div>
+</header>
+<br>
+style.css
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+body {
+  color: #333;
+  font-size: 16px;
+}
+
+.text-end a {
+  float: right;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a :hover,
+a :active,
+a :visited {
+  text-decoration: none;
+}
+
+.breadcrumb .sep {
+  padding: 0 5px;
+}
+
+label {
+  margin-bottom: 1rem;
+}
+
+.hero {
+  background-color: #e7f3ff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product {
+  border: 1px solid #c0c0c0;
+  height: 300px;
+  margin-bottom: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.product .image {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.product .image img {
+  max-height: 80%;
+  max-width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product .info {
+  background-color: #1c7ad1cc;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  min-height: 100%;
+  opacity: 0;
+  transition: all 0.25s ease;
+  color: #fff !important;
+}
+
+.product .info .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product :hover > .info {
+  opacity: 1;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+.cartDisplay div {
+  width: 75%;
+}
+
+.cartDisplay div h6 {
+  text-align: left;
+}
+
+.cartDisplay img {
+  margin-right: 1rem;
+}
+style.min.css
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");body{color:#333;font-size:16px}.text-end a{float:right}a{text-decoration:none !important}a :hover,a :active,a :visited{text-decoration:none}.breadcrumb .sep{padding:0 5px}label{margin-bottom:1rem}.hero{background-color:#e7f3ff;padding:2rem;margin-bottom:2rem}.product{border:1px solid #c0c0c0;height:300px;margin-bottom:1rem;text-align:center;position:relative}.product .image{overflow:hidden;height:100%;width:100%;margin-bottom:1rem;padding:1rem}.product .image img{max-height:80%;max-width:80%;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}.product .info{background-color:#1c7ad1cc;position:absolute;width:100%;bottom:0;left:0;padding:1rem;min-height:100%;opacity:0;transition:all 0.25s ease;color:#fff !important}.product .info .title{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}.product :hover>.info{opacity:1}footer{margin-top:2rem}.cartDisplay div{width:75%}.cartDisplay div h6{text-align:left}.cartDisplay img{margin-right:1rem}
+style.scss
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+body {
+	color: #333;
+	font-size: 16px;
+}
+
+.text-end a {
+	float: right;
+}
+
+a {
+	text-decoration: none !important;
+	:hover,
+	:active,
+	:visited {
+		text-decoration: none;
+	}
+}
+
+.breadcrumb .sep {
+	padding: 0 5px;
+}
+
+label {
+	margin-bottom: 1rem;
+}
+
+.hero {
+	background-color: rgb(231, 243, 255);
+	padding: 2rem;
+	margin-bottom: 2rem;
+}
+
+.product {
+	border: 1px solid #c0c0c0;
+	height: 300px;
+	margin-bottom: 1rem;
+	text-align: center;
+	position: relative;
+	.image {
+		overflow: hidden;
+		height: 100%;
+		width: 100%;
+		margin-bottom: 1rem;
+		padding: 1rem;
+		img {
+			max-height: 80%;
+			max-width: 80%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	.info {
+		background-color: #1c7ad1cc;
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		padding: 1rem;
+		min-height: 100%;
+		opacity: 0;
+		transition: all 0.25s ease;
+		color: #fff !important;
+
+		.title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	:hover > .info {
+		opacity: 1;
+	}
+}
+
+footer {
+	margin-top: 2rem;
+}
+
+.cartDisplay {
+	div {
+		width: 75%;
+		h6 {
+			text-align: left;
+		}
+	}
+	img {
+		margin-right: 1rem;
+	}
+}
+
+
+main.go 
+package main
+
+import (
+	"database/sql"
+	"encoding/json"
+	"fmt"
+	"log"
+	"net/http"
+	"os"
+
+	_ "github.com/go-sql-driver/mysql"
+	"github.com/gorilla/mux"
+	"github.com/gorilla/sessions"
+	"github.com/joho/godotenv"
+	"golang.org/x/crypto/bcrypt"
+)
+
+var db *sql.DB
+var store = sessions.NewCookieStore([]byte("super-secret-key"))
+
+func initDB() {
+	err := godotenv.Load(".env")
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
+
+	dsn := fmt.Sprintf("%s:%s@tcp(%s)/%s",
+		os.Getenv("DB_USER"), os.Getenv("DB_PASSWORD"),
+		os.Getenv("DB_HOST"), os.Getenv("DB_NAME"))
+
+	db, err = sql.Open("mysql", dsn)
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
+type User struct {
+	ID       int    `json:"id"`
+	Username string `json:"username"`
+	Password string `json:"password"`
+	Role     string `json:"role"`
+}
+
+type Product struct {
+	ID          int     `json:"id"`
+	Name        string  `json:"name"`
+	Description string  `json:"description"`
+	Price       float64 `json:"price"`
+	ImageURL    string  `json:"image_url"`
+}
+
+func handleSignup(w http.ResponseWriter, r *http.Request) {
+	var user User
+	json.NewDecoder(r.Body).Decode(&user)
+
+	hashedPassword, _ := bcrypt.GenerateFromPassword([]byte(user.Password), bcrypt.DefaultCost)
+	stmt, err := db.Prepare("INSERT INTO users(username, password, role) VALUES(?, ?, 'user')")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	_, err = stmt.Exec(user.Username, string(hashedPassword))
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	w.WriteHeader(http.StatusCreated)
+	json.NewEncoder(w).Encode("Signup successful")
+}
+
+func handleLogin(w http.ResponseWriter, r *http.Request) {
+	var user User
+	json.NewDecoder(r.Body).Decode(&user)
+
+	stmt := "SELECT id, password FROM users WHERE username=?"
+	row := db.QueryRow(stmt, user.Username)
+
+	var dbUser User
+	err := row.Scan(&dbUser.ID, &dbUser.Password)
+	if err != nil {
+		http.Error(w, "Invalid login", http.StatusUnauthorized)
+		return
+	}
+
+	err = bcrypt.CompareHashAndPassword([]byte(dbUser.Password), []byte(user.Password))
+	if err != nil {
+		http.Error(w, "Invalid login", http.StatusUnauthorized)
+		return
+	}
+
+	session, _ := store.Get(r, "session")
+	session.Values["authenticated"] = true
+	session.Save(r, w)
+
+	json.NewEncoder(w).Encode("Login successful")
+}
+
+func handleLogout(w http.ResponseWriter, r *http.Request) {
+	session, _ := store.Get(r, "session")
+	session.Values["authenticated"] = false
+	session.Save(r, w)
+	json.NewEncoder(w).Encode("Logout successful")
+}
+
+func handleAddProduct(w http.ResponseWriter, r *http.Request) {
+	var product Product
+	json.NewDecoder(r.Body).Decode(&product)
+
+	stmt, err := db.Prepare("INSERT INTO products(name, description, price, image_url) VALUES(?, ?, ?, ?)")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	_, err = stmt.Exec(product.Name, product.Description, product.Price, product.ImageURL)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	json.NewEncoder(w).Encode("Product added successfully")
+}
+
+func main() {
+	initDB()
+
+	router := mux.NewRouter()
+	router.HandleFunc("/signup", handleSignup).Methods("POST")
+	router.HandleFunc("/login", handleLogin).Methods("POST")
+	router.HandleFunc("/logout", handleLogout).Methods("GET")
+	router.HandleFunc("/product", handleAddProduct).Methods("POST")
+
+	fmt.Println("Server running at port 8080")
+	http.ListenAndServe(":8080", router)
+}
+init.js
+$(function () {
+	if (localStorage.getItem("user") == null && $(".auth").length) {
+		window.location.href = "/login.html";
+	}
+	loadScript("js/categories.js", categoriesSetup);
+	loadScript("js/products.js", productsSetup);
+	loadScript("js/user.js", userInfo);
+	loadScript("js/cart.js", cartInfo);
+	//loadScript("js/ecommerce.js", cartSetup);
+});
+
+$.get("/templates/navigation.html", function (data) {
+	if ($(".logout").length) {
+		localStorage.clear();
+	}
+	$("#nav-placeholder").replaceWith(data);
+	if (localStorage.getItem("user") === null) {
+		$(".accountNav").html(
+			'<li class="nav-item"><a class="nav-link text-white" href="/login.html">Login</a> </li>'
+		);
+	} else {
+		$(".accountNav").html(
+			'<li class="nav-item"><a class="nav-link text-white" href="/account.html">Account</a></li><li class="nav-item"><a class="nav-link text-white" href="/logout.html">Log Out</a></li>'
+		);
+	}
+});
+
+$.get("/templates/footer.html", function (data) {
+	$("#footer-placeholder").replaceWith(data);
+});
+
+var categoriesSetup = function () {
+	let categories = new Categories();
+	categories.getAllCategories();
+	if (urlParam("category")) {
+		categories.getSingleCategory(decodeURIComponent(urlParam("category")));
+	}
+};
+
+var productsSetup = function () {
+	let products = new Products();
+	if ($(".products.new").length) {
+		products.getNewProducts(8);
+	}
+	if (urlParam("productid")) {
+		products.getSingleProduct(urlParam("productid"));
+	}
+};
+
+var userInfo = function () {
+	let user = new User();
+	$("form.login").submit(function (e) {
+		e.preventDefault();
+		var username = $("#username").val();
+		var password = $("#password").val();
+		user.doLogin(username, password);
+	});
+	if ($(".userAccount").length) {
+		var userAccount = JSON.parse(localStorage.user);
+		user.getAccountInfo(userAccount);
+	}
+};
+
+var cartInfo = function () {
+	let cart = new Cart();
+	if (localStorage.getItem("user") != null) {
+		var user = JSON.parse(localStorage.user);
+		cart.getCart(user.id);
+		if (localStorage.getItem("cartCount") != 0) {
+			var cartItems = JSON.parse(localStorage.getItem("cart"));
+			cart.getCartDisplay(cartItems);
+		}
+	}
+};
+
+function loadScript(url, callback) {
+	var head = document.head;
+	var script = document.createElement("script");
+	script.type = "text/javascript";
+	script.src = url;
+	script.onreadystatechange = callback;
+	script.onload = callback;
+	head.appendChild(script);
+}
+
+function toTitleCase(str) {
+	return str.replace(/(?:^|\s)\w/g, function (match) {
+		return match.toUpperCase();
+	});
+}
+
+function urlParam(name) {
+	var results = new RegExp("[?&]" + name + "=([^&#]*)").exec(
+		window.location.href
+	);
+	if (results == null) {
+		return null;
+	} else {
+		return results[1] || 0;
+	}
+}
+product.js
+class Products {
+	constructor() {
+		this.apiUrl = "https://fakestoreapi.com/";
+	}
+
+	getNewProducts(limit) {
+		$.ajax({
+			type: "GET",
+			url: this.apiUrl + "products?limit=" + limit + "&sort=desc",
+			success: function (data) {
+				$(data).each(function (index, product) {
+					$(".products").append(
+						'<div class="col-md-3"><div class="product"><a href="/product.html?productid=' +
+							encodeURIComponent(product.id) +
+							'">' +
+							'<div class="image"><img src="' +
+							product.image +
+							'" class="img-fluid"></div><div class="info"><div class="title">' +
+							product.title +
+							"<br>$" +
+							product.price +
+							"</div></div></a></div></div>"
+					);
+				});
+			},
+		});
+	}
+
+	getSingleProduct(id) {
+		$.ajax({
+			type: "GET",
+			url: this.apiUrl + "products/" + id,
+			success: function (data) {
+				$(".breadcrumb").html(
+					'<a href="/">Home</a><span class="sep">></span><a href="/category.html?category=' +
+						data.category +
+						'">' +
+						toTitleCase(data.category) +
+						'</a><span class="sep">></span>' +
+						data.title
+				);
+				$(".product_image").html(
+					'<img src="' + data.image + '" class="img-fluid">'
+				);
+				$(".product_title").html(data.title);
+				$(".product_price").html("$" + data.price.toFixed(2));
+				$(".product_description").html("<p>" + data.description + "</p>");
+			},
+		});
+	}
+}
+user.js
+class User {
+	constructor() {
+		this.apiUrl = "https://fakestoreapi.com/";
+	}
+
+	getAccountInfo(user) {
+		$("#username").val(user.username);
+		$("#fname").val(user.name.firstname);
+		$("#lname").val(user.name.lastname);
+		$("#phone").val(user.phone);
+		$("#email").val(user.email);
+		$("#address").val(user.address.number + " " + user.address.street);
+		$("#city").val(user.address.city);
+		$("#zip").val(user.address.zipcode);
+	}
+
+	doLogin(username, password) {
+		localStorage.clear();
+		$.ajax({
+			type: "GET",
+			url: this.apiUrl + "users",
+			success: function (data) {
+				$(data).each(function (index, user) {
+					if (user.username == username && user.password == password) {
+						localStorage.setItem("user", JSON.stringify(user));
+					}
+				});
+				if (localStorage.getItem("user") != null) {
+					window.location.href = "/account.html";
+				} else {
+					$(".loginMsg").html(
+						'<div class="alert alert-danger" role="alert">Your password or username is incorrect. Please try again.</div>'
+					);
+				}
+			},
+		});
+	}
+}
+cart.js
+class Cart {
+	constructor() {
+		this.apiUrl = "https://fakestoreapi.com/";
+	}
+
+	getCart(userID) {
+		var i = 0;
+		var apiUrl = this.apiUrl;
+		var count = 0;
+		var carts = [];
+		$.ajax({
+			type: "GET",
+			url: apiUrl + "carts/user/" + userID,
+			success: function (data) {
+				$(data).each(function (index, cart) {
+					count += cart.products.length;
+					$(cart.products).each(function (index, products) {
+						var singleProduct = {};
+						$.ajax({
+							type: "GET",
+							url: apiUrl + "products/" + products.productId,
+							success: function (product) {
+								//console.log(product);
+								singleProduct["productId"] = product.id;
+								singleProduct["productURL"] =
+									"/product.html?productid=" + product.id;
+								singleProduct["title"] = product.title;
+								singleProduct["price"] = product.price;
+								singleProduct["image"] = product.image;
+								carts.push(singleProduct);
+								localStorage.setItem("cart", JSON.stringify(carts));
+							},
+						});
+					});
+				});
+				localStorage.setItem("cartCount", count);
+				$("span.cartCount.badge").html(count);
+			},
+		});
+	}
+
+	getSingleProductCart(id) {
+		$.ajax({
+			type: "GET",
+			url: this.apiUrl + "products/" + id,
+			success: function (data) {
+				console.log(data);
+			},
+		});
+	}
+
+	getCartDisplay(products) {
+		var price = 0;
+		$(products).each(function (index, product) {
+			price += product.price;
+			$(".cartDisplay").prepend(
+				'<li class="list-group-item d-flex justify-content-between lh-sm"><img src="' +
+					product.image +
+					'" class="img-thumbnail" style="max-width:50px;"><div><h6>' +
+					product.title +
+					'</h6></div> <span class="text-muted">$' +
+					product.price.toFixed(2) +
+					"</span> </li>"
+			);
+		});
+		$(".price").html(price);
+	}
+}
+categories.js
+
+class Categories {
+	constructor() {
+		this.apiUrl = "https://fakestoreapi.com/";
+	}
+
+	getAllCategories() {
+		$.ajax({
+			type: "GET",
+			url: this.apiUrl + "products/categories",
+			success: function (data) {
+				$(data).each(function (index, category) {
+					$(".categories").append(
+						'<a class="dropdown-item" href="/category.html?category=' +
+							encodeURIComponent(category) +
+							'">' +
+							toTitleCase(category) +
+							"</a>"
+					);
+				});
+				$(".categories").append(
+					'<a class="dropdown-item" href="/cart.html">Cart</a>'
+				);
+			},
+		});
+	}
+
+	getSingleCategory(slug) {
+		$.ajax({
+			type: "GET",
+			url: this.apiUrl + "products/category/" + slug,
+			success: function (data) {
+				console.log(data);
+				$(data).each(function (index, product) {
+					$(".breadcrumb").html(
+						'<a href="/">Home</a> <span class="sep">></span> ' +
+							toTitleCase(product.category)
+					);
+					$(".category-name").html(toTitleCase(product.category));
+
+					$(".products").append(
+						'<div class="col-md-3"><div class="product"><a href="/product.html?productid=' +
+							encodeURIComponent(product.id) +
+							'">' +
+							'<div class="image"><img src="' +
+							product.image +
+							'" class="img-fluid"></div><div class="info"><div class="title">' +
+							product.title +
+							"<br>$" +
+							product.price +
+							"</div></div></a></div></div>"
+					);
+				});
+			},
+		});
+	}
+}
+
+
+
+IDE: VS Code, GoLang, IntelliJ
+
+Develop a web application that uses below features
+HTTP session management
+Develop REST API 
+Build UI and consume REST API
+Connect to MYSQL database 
+Create JSON messages. Read and parse JSON messages
+Read HTTP headers from http request.
+Encryption/Decryption
+
+Sample Application 1: Create a web application that shows login screen, authenticate user and implement online shopping
+Give me the A good looking UI & frontend design  in html css bootstrap 
+also add a admin page where I can add and delete products, shows user data etc make sure when I login It shows the profile instead of login and signup etc add the elements like shopping cart, check out option etc dont use same css file of all pages make new css and .js files for all pages seprately all must be in home directory so use node,js it will be beter use mysql at any cost do not
+ CREATE DATABASE Shop_data
+    -> ;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> USE Shop_data;
+Database changed
+mysql> CREATE TABLE users (
+    ->     id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     username VARCHAR(255) NOT NULL UNIQUE,
+    ->     password VARCHAR(255) NOT NULL,
+    ->     role ENUM('admin', 'user') NOT NULL
+    -> );
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> CREATE TABLE products (
+    ->     id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     name VARCHAR(255) NOT NULL,
+    ->     description TEXT,
+    ->     price DECIMAL(10,2) NOT NULL,
+    ->     image_url VARCHAR(255)
+    -> );
