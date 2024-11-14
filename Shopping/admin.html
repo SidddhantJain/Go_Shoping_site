@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="/css/style.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+        <form id="addProductForm">
+            <input type="text" id="productName" class="form-control" placeholder="Product Name" required>
+            <textarea id="productDescription" class="form-control" placeholder="Product Description" required></textarea>
+            <input type="number" id="productPrice" class="form-control" placeholder="Price" required>
+            <input type="text" id="productImage" class="form-control" placeholder="Image URL" required>
+            <button type="submit" class="btn btn-primary">Add Product</button>
+        </form>
+        <h2>Manage Products</h2>
+        <div id="productList"></div>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script src="/js/admin.js"></script>
+</body>
+</html>
