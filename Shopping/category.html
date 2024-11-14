@@ -3,16 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category Page</title>
-    <link href="/css/style.min.css" rel="stylesheet">
+    <meta name="description" content="Browse products by category">
+    <title>Category Products</title>
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <div id="nav-placeholder"></div>
-    <div class="container">
-        <h1 class="category-name"></h1>
-        <div class="row products"></div>
-    </div>
-    <div id="footer-placeholder"></div>
-    <script src="/js/categories.js"></script>
+    <header id="nav-placeholder"></header>
+    
+    <main>
+        <div class="container">
+            <div class="category-header">
+                <h1 class="category-name">Category Products</h1>
+                <div class="category-actions">
+                    <button class="btn btn-outline" id="sortButton">
+                        <i class="bi bi-sort-down"></i>
+                        Sort
+                    </button>
+                </div>
+            </div>
+            
+            <section class="products" aria-label="Product grid">
+                <!-- Products will be dynamically loaded here -->
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+    
+    <script src="/js/categories.js" defer></script>
 </body>
 </html>
